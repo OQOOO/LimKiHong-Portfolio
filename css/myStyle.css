@@ -1,0 +1,22 @@
+#solidContainer {
+    position: relative;
+    right: 40px
+}
+
+#solidInfo {
+    display: none;
+    position:relative; 
+    left:50px;
+}
+
+#solid {
+    display: inline;
+    width: 100px;
+}
+#solidContainer {
+    display: inline;
+}
+
+#solidContainer:hover #solidInfo {
+    display: block;
+}

@@ -15,7 +15,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
 
         <link href="css/styles.css" rel="stylesheet" />
-
+        <link href="css/myStyle.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -160,6 +160,60 @@
                     </ul>
                     <div class="subheading mb-3">knowledge</div>
                     <ul class="fa-ul mb-4">
+                        <!--SOLID-->
+                        <div class="fa-ul mb-0" id="solidContainer">
+                          
+                            <li id="solid">
+                                <span class="fa-li">
+                                    <i class="fas fa-sitemap"></i>
+                                </span>
+                                <!-- 객체지향 5대 원칙 -->
+                                SOLID 
+                            </li>
+                            
+                            <div id="solidInfo">
+                                <li>
+                                    <span class="fa-li">
+                                        <!-- <i class="fas fa-clipboard-list"></i> -->
+                                        <p style="font-weight: bold;">S</p>
+                                    </span>
+                                    <!--하나의 클래스는 하나의 목적을 가지고 있어야 함 -->
+                                    단일 책임 원칙 
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <!-- <i class="fas fa-code-branch"></i> -->
+                                        <p style="font-weight: bold;">O</p>
+                                    </span>
+                                    <!--확장에는 열려있고 변경에는 폐쇄되어야 함 -->
+                                    개방 폐쇄 원칙 
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <!-- <i class="fas fa-sitemap"></i> -->
+                                        <p style="font-weight: bold;">L</p>
+                                    </span>
+                                    <!--Liskov Substitution Principle. 서브타입을 기반 타입으로 교체할 수 있어야 한다는 원칙 -->
+                                    리스코프 치환 원칙 
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <!-- <i class="fas fa-unlink"></i> -->              
+                                        <p style="font-weight: bold;">I</p>
+                                    </span>
+                                    <!--Interface Segregation Principle, ISP. 자신이 사용하지 않는 메서드에 의존하지 않아야 함 -->
+                                    인터페이스 분리 원칙
+                                </li>
+                                <li>
+                                    <span class="fa-li">
+                                        <!-- <i class="fas fa-info-circle"></i> -->
+                                        <p style="font-weight: bold;">D</p>
+                                    </span>
+                                    <!--Dependency Inversion Principle, DIP. 고수준 모듈은 저소준 모듈 대신 양 모듈 모두 인터페이스에 의존해야 함 -->
+                                    의존성 역전 원칙
+                                </li>
+                            </div>
+                        </div>
                         <li>
                             <span class="fa-li"><i class="fas fa-cube"></i></span>
                             <!--Kipp it Simple, small. 단순할수록 좋다는 사상-->
@@ -169,32 +223,6 @@
                             <span class="fa-li"><i class="fas fa-recycle"></i></span>
                             <!--Don't Repeat Yourself. 중복을 줄이라는 사상-->
                             DRY 원칙 
-                        </li>
-                        <!--SOLID-->
-                        <li>
-                            <span class="fa-li"><i class="fas fa-clipboard-list"></i></span>
-                            <!--하나의 클래스는 하나의 목적을 가지고 있어야 함 -->
-                            단일 책임 원칙 
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-code-branch"></i></span>
-                            <!--확장에는 열려있고 변경에는 폐쇄되어야 함 -->
-                            개방 폐쇄 원칙 
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-sitemap"></i></span>
-                            <!--Liskov Substitution Principle. 서브타입을 기반 타입으로 교체할 수 있어야 한다는 원칙 -->
-                            리스코프 치환 원칙 
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-unlink"></i></span>
-                            <!--Interface Segregation Principle, ISP. 자신이 사용하지 않는 메서드에 의존하지 않아야 함 -->
-                            인터페이스 분리 원칙
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-info-circle"></i></span>
-                            <!--Dependency Inversion Principle, DIP. 고수준 모듈은 저소준 모듈 대신 양 모듈 모두 인터페이스에 의존해야 함 -->
-                            의존성 역전 원칙
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-puzzle-piece"></i></span>
@@ -481,9 +509,9 @@
                             <h3 class="mb-0">Jump Game</h3>
                             <div class="subheading mb-3">HTML, CSS, JS를 활용한 게임</div>
 
-                            <iframe src="wepGame/index.html" width="765px" height="318px"></iframe>
+                            <iframe src="wepGame/index.html" width="765px" height="310px" style="position:relative; right:7px"></iframe>
 
-                            <p>HTML, CSS, JS를 활용해 만든 간단한 피하기 게임입니다. 시간에 따라 난이도가 증가하고 보스를 처치하면 승리합니다.</p>
+                            <p>HTML, CSS, JS를 활용해 만든 간단한 피하기 게임입니다. 점수에 따라 난이도가 증가하고 보스를 처치하면 승리합니다.</p>
                             <a class="social-icon" href="https://github.com/OQOOO/wepGameProject"><i class="fab fa-github fa-3x"></i></a>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2023.05.13 ~ 2023.05.16</span></div>
@@ -622,8 +650,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <!--<script src="js/scripts.js"></script>-->
-        <script>
+        <script src="js/scripts.js"></script>
+        <!-- <script>
             window.addEventListener('DOMContentLoaded', event => {
 
             // Activate Bootstrap scrollspy on the main nav element
@@ -649,6 +677,6 @@
             });
 
             });
-        </script>
+        </script> -->
     </body>
 </html>
