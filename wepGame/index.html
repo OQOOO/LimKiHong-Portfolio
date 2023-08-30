@@ -295,6 +295,12 @@
             isGameStart = true;
             document.getElementById('point').style.display = 'block';
             point += parseInt(document.getElementById('cheat').value);
+            if (isNaN(point)) {
+                point = 0
+            }
+
+            console.log(point)
+            
 
             // 시작페이지 가리기
             const startPage = document.getElementById("startPage");
@@ -1064,7 +1070,7 @@
             </div>
             <div id="filter" style="z-index: -1;">
                 <div style="font-size: 12px; color:white; z-index: -3;">
-                    점프 : SPACE<br>
+                    점프 : SPACE, 클릭<br>
                     파이어볼 : E (200점 사용)
                     <br><br>
                     적 회피 + 100점<br>
@@ -1083,7 +1089,7 @@
             <div id="trampleEffect"></div>
             <div id="explosionEffect"></div>
         </div>
-        <input id="cheat" type="number" value="0">
+        <input id="cheat" type="number" placeholder="시작점수 설정">
     </div>
 </body>
 
