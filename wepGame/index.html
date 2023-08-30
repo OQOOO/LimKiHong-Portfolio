@@ -980,6 +980,12 @@
             /**
              * 키 입력 감지 함수
              **/
+            const gameBox = document.getElementById('container');
+            gameBox.addEventListener('click', function() {
+                if (isGameOver === false && !isJumping) {
+                    jump();
+                }
+            });
             document.addEventListener('keydown', function (event) {
                 if (isGameOver === false) {
                     if (event.code === 'Space' && !isJumping) {
