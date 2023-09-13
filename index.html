@@ -189,6 +189,11 @@
                             </div>
                         </div>
                         <li>
+                            <span class="fa-li"><i class="fas fa-eye"></i></span>
+                            <!--AOP (Aspect-Oriented Programming) 관점 지향 프로그래밍. 소프트웨어 개발 중 반복적으로 처리해야 할 관심사와 그것을 처리하기 위한 모듈인 관점-->
+                            AOP
+                        </li>
+                        <li>
                             <span class="fa-li"><i class="fas fa-cube"></i></span>
                             <!--Kipp it Simple, small. 단순할수록 좋다는 사상-->
                             KISS 원칙 
@@ -277,7 +282,7 @@
                             </p>
                             <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">송금 간 트랜잭션 유지</div>
                             <p>
-                                송금중 데이터베이스 오토커밋을 종료하고, 문제 발생시 rollback, 문제없이 송금 완료시 커밋하는 방식으로 트랜잭션을 구현했습니다.
+                                송금 과정과 거래내역 생성을 하나로 묶은 트랜잭션을 구현했습니다.
                             </p>
                             <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">Open Api 활용</div>
                             <p>
@@ -323,22 +328,22 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Overview</h3>
                             <div class="subheading mb-3">모션인식을 통해 얻은 데이터를 웹서버에서 관리</div>
-                            <p>파이썬 앱의 MediaPipe를 통한 모션인식을 통해 사용자의 운동을 보조하고, 그렇게 만들어진 데이터를 웹서버로 전송해 활용하는 기능을 가진 시스템입니다.</p>
+                            <p>파이썬 어플에서 MediaPipe를 통한 모션인식을 통해 사용자의 운동을 보조하고 해당 데이터를 서버로 전송해 각종 서비스를 제공하는 시스템입니다.</p>
 
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023.07.11 ~ 진행중</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><!--2023.07.11 ~ -->진행중</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Core Features</h3>
                             <div class="subheading mb-3">프로젝트의 핵심 기능</div>
+                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">Spring Web MVC를 사용한 어플과 웹 서버 사이의 통신</div>
+                            <p>
+                                Spring Web MVC를 사용해 파이썬 앱과 웹서버 사이의 Json 통신을 구현하였습니다.
+                            </p>
                             <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">모션인식</div>
                             <p>
                                 MediaPipe와 카메라를 통해 모션 인식을 도입했습니다. 모션 인식을 통해 사용자의 자세가 올바른지 판단할 수 있습니다.
-                            </p>
-                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">JSON을 통한 어플과 웹 서버 사이의 통신</div>
-                            <p>
-                                모션인식 파이썬 앱을 통해 만들어진 데이터를 서버에 저장하고, 서버에서 해당 데이터를 활용해 각종 서비스를 제공할 수 있습니다.
                             </p>
 
                         </div>
@@ -401,7 +406,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Overview</h3>
                             <div class="subheading mb-3">MVC 패턴 적용 프로젝트</div>
-                            <p>사용자가 도서를 검색하고, 대여 및 반납을 하는 기능을 필요로 하는 상황을 가정하여 만든 프로젝트로써, 최초로 MVC(Model-View-Controller) 패턴을 적용하여 만든 프로젝트입니다.</p>
+                            <p>사용자가 도서를 검색하고, 대여 및 반납을 하는 기능을 필요로 하는 상황을 가정하여 만든 프로젝트로써, 최초로 MVC(Model-View-Controller) 패턴을 적용하여 만든 프로젝트입니다. 해당 프로젝트를 진행하며 MVC 패턴에 대해 많은것을 배울 수 있었습니다.</p>
 
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2023.05.24 ~ 2023.05.31</span></div>
