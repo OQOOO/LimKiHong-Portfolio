@@ -22,7 +22,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
+                <span class="d-block d-lg-none">Lim Kihong</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -142,10 +142,6 @@
                             <span class="fa-li"><i class="fab fa-js-square"></i></span>
                             JavaScript
                         </li>
-                        <!-- <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            대부분의 라이브러리는 단시간에 응용 가능합니다.
-                        </li> -->
                     </ul>
                     <div class="subheading mb-2">tools</div>
                     <ul class="fa-ul mb-4">
@@ -168,21 +164,26 @@
                             <span class="fa-li"><i class="fa fa-leaf"></i></span>
                             Spring Framework<br>
                             - API 구현 가능<br>
-                            - 템플릿 엔진 사용 가능<br>
+                            - JSP 사용 가능<br>
                             - JDBC를 통해 데이터베이스 연동 가능<br>
-                            &nbsp;&nbsp; - MyBatis 활용 가능<br>
+                            - MyBatis 활용 가능<br>
+                            - 의존성 주입 활용 가능<br>
+                            - 필터를 통한 전, 후 처리 가능<br>
                         </li>
-                        
-
-
-
                         <li>
                             <span class="fa-li"><i class="fab fa-windows"></i></span>
-                            ASP.NET
+                            ASP.NET<br>
+                            - API 구현 가능<br>
+                            - 의존성 주입 활용 가능<br>
+                            - 미들웨어를 통한 전, 후 처리 가능<br>
+                            - LiteDB 연동 가능<br>
                         </li>
                         <li>
                             <span class="fa-li"><i class="fab fa-node-js"></i></span>
-                            Node.js
+                            Node.js<br>
+                            - API 구현 가능<br>
+                            - 템플릿 엔진 활용 가능<br>
+                            - 미들웨어를 통한 전, 후 처리 가능
                         </li>
                         <!-- <li>
                             <span class="fa-li"><i class="fas fa-dove"></i></span>
@@ -308,93 +309,11 @@
             </section>
             <hr class="m-0" />
             <!-- project1 -->
+            <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            gif 위에 마우스를 올리면 처음부터 다시 재생됩니다.
             <section class="resume-section" id="project1">
                 <div class="resume-section-content">
                     <h2 class="mb-1">project 1</h2>
-                    <p class="mb-0">팀 프로젝트(4인)</p>
-                    <h3 class="mb-5">모션인식 헬스케어</h3>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Overview</h3>
-                            <div class="subheading mb-3">모션인식을 통해 얻은 데이터를 웹서버에서 관리</div>
-                            <p>파이썬 어플에서 MediaPipe를 통한 모션인식을 통해 사용자의 운동을 보조하고 해당 데이터를 서버로 전송해 각종 서비스를 제공하는 시스템입니다.</p>
-
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023.07</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Preview</h3>
-                            <div class="subheading mb-3">api 로그인, 모션인식 운동, 데이터 전송</div>
-                            <div style="
-                            position: relative; overflow: hidden;
-                            width: 500px; 
-                            height: 350px;
-                            border-radius: 5px;
-                            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-                            ">
-                                <img style="
-                                position: absolute;
-                                top: -2px;
-                                left: -2px;
-                                width: 504px; 
-                                height: 354px;
-                                " src="assets/img/hc.gif" 
-                                alt=""
-                                data-animated="assets/img/hc.gif" 
-                                data-static="assets/img/hc_static.png" 
-                                class="hov-anim">
-                            </div>
-                            <p>순서대로 API 로그인, 모션인식 운동보조, 해당 기록 웹서버에서 확인입니다.</p>
-
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Core Features</h3>
-                            <div class="subheading mb-3">프로젝트의 핵심 기능</div>
-                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">Spring Web MVC를 사용한 어플과 웹 서버 사이의 통신</div>
-                            <p>
-                                Spring Web MVC를 사용해 파이썬 앱과 웹서버 사이의 Json 통신을 구현하였습니다.
-                            </p>
-                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">모션인식</div>
-                            <p>
-                                MediaPipe와 카메라를 통해 모션 인식을 도입했습니다. 모션 인식을 통해 사용자의 자세가 올바른지 판단할 수 있습니다.
-                            </p>
-
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <!-- <h3 class="mb-0">Full Features</h3>
-                            <div class="subheading mb-3">프로젝트의 전체 기능들</div>
-                            <p>
-                                - 로그인<br>
-                                - 모션인식을 통한 운동 메뉴 선택<br>
-                                - 모션인식 보조 운동<br>
-                                - RESTful API를 통한 어플 - 웹서버간 통신<br>
-                                - Ajax를 통한 화면 업데이트<br>
-                                - 운동 데이터를 통한 사용자 통계 제공<br>
-                            </p>  -->
-                            <!---->
-                            <h3 class="mb-0">Throughout the Project</h3>
-                            <div class="subheading mb-3">프로젝트를 진행하며</div>
-                            <p>
-                                해당 프로젝트를 진행하면 가장 인상깊었던 부분은 API를 사용하여 다른 언어로 제작된 어플리케이션간의 통신을 구현했던 부분입니다.<br>
-                                이 경험을 통해 API에 대한 개념을 보다 실감나게 알 수 있었습니다.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
-                    </div>
-                    <a class="social-icon" href="https://github.com/OQOOO/HealthCareSystem"><i class="fab fa-github fa-3x"></i></a>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- project2 -->
-            <section class="resume-section" id="project2">
-                <div class="resume-section-content">
-                    <h2 class="mb-1">project 2</h2>
                     <p class="mb-0">개인, 팀 프로젝트(4인, 각자 만든 프로젝트 연동)</p>
                     <h3 class="mb-1">오픈뱅킹</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-1">
@@ -452,7 +371,10 @@
                             </p>
                             <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">송금 간 트랜잭션 유지</div>
                             <p>
-                                송금 과정과 거래내역 생성을 하나로 묶은 트랜잭션을 구현했습니다.
+                                송금 과정과 거래내역 생성을 하나로 묶은 트랜잭션을 구현했습니다.<br>
+                                <br>
+                                송금 과정에 관여하는 데이터베이스 연결을 별도로 분리하여 오토커밋 종료,<br>
+                                송금 완료 후 커밋을 실행하는 방식으로 구현했습니다.
                             </p>
                             <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">Open Api 활용</div>
                             <p>
@@ -463,7 +385,7 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <!-- <h3 class="mb-0">Full Features</h3>
+                            <h3 class="mb-0">Full Features</h3>
                             <div class="subheading mb-3">프로젝트의 전체 기능들</div>
                             <p>
                                 - 로그인, 회원가입, 개인정보 수정, 회원 탈퇴<br>
@@ -475,15 +397,20 @@
                                 - 송금액 및 여타 금액 실시간 원화로 보조 표기 (ex: 1234억 567만 80원)<br>
                                 - 거래내역 생성 및 확인<br>
                                 - 게시판 기능<br>
-                                - 무한 대댓글 기능<br>
+                                - 대댓글 기능<br>
                                 - 거래내역, 게시판 페이징 기능<br>
                                 - 유저 정보 확인 (관리자)<br>
                                 - 게시판 관리 (관리자)
-                            </p> -->
-                            <h3 class="mb-0">Throughout the Project</h3>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Learned Lessons</h3>
                             <div class="subheading mb-3">프로젝트를 진행하며</div>
                             <p>
-                                여러 명이서 프로젝트를 진행할 땐 프로젝트를 진행하기 전에 계획을 철저하게 확립하는것이 중요하다는 사실을 느꼈습니다.<br>
+                                팀 프로젝트 진행 시 계획을 철저하게 확립하는것이 중요하다는 사실을 느꼈습니다.<br>
                                 또한 프로젝트를 진행하면서 기술 부채 관리의 중요성도 알 수 있었습니다.
                             </p>
                         </div>
@@ -493,9 +420,107 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- project 2 -->
+            <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            <section class="resume-section" id="project2">
+                <div class="resume-section-content">
+                    <h2 class="mb-1">project 2</h2>
+                    <p class="mb-0">팀 프로젝트(4인)</p>
+                    <h3 class="mb-5">모션인식 헬스케어</h3>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Overview</h3>
+                            <div class="subheading mb-3">모션인식을 통해 얻은 데이터를 웹서버에서 관리</div>
+                            <p>파이썬 어플에서 MediaPipe를 통한 모션인식을 통해 사용자의 운동을 보조하고 해당 데이터를 서버로 전송해 각종 서비스를 제공하는 시스템입니다.</p>
+
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">2023.07</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Preview</h3>
+                            <div class="subheading mb-3">api 로그인, 모션인식 운동, 데이터 전송</div>
+                            <div style="
+                            position: relative; overflow: hidden;
+                            width: 500px; 
+                            height: 350px;
+                            border-radius: 5px;
+                            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+                            ">
+                                <img style="
+                                position: absolute;
+                                top: -2px;
+                                left: -2px;
+                                width: 504px; 
+                                height: 354px;
+                                " src="assets/img/hc.gif" 
+                                alt=""
+                                data-animated="assets/img/hc.gif" 
+                                data-static="assets/img/hc_static.png" 
+                                class="hov-anim">
+                            </div>
+                            <p>순서대로 API 로그인, 모션인식 운동보조, 해당 기록 웹서버에서 확인입니다.</p>
+
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Core Features</h3>
+                            <div class="subheading mb-3">프로젝트의 핵심 기능</div>
+                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">Spring Web MVC를 사용한 어플과 웹 서버 사이의 통신</div>
+                            <p>
+                                Spring Web MVC를 사용해 파이썬 앱과 웹서버 사이의 Json 통신을 구현하였습니다.<br>
+                                
+                                해당 기능을 통해 파이썬 앱에서 서버 계정을 통해 로그인하고, 운동 데이터를 서버 db에 저장시킬 수 있는 기능을 구현했습니다.<br>
+                            </p>
+                            <div class="subheading mb-0" style="font-size: 18px; font-weight: bold;">모션인식</div>
+                            <p>
+                                MediaPipe와 카메라를 통해 사용자의 자세가 올바른지 판단할 수 있습니다.<br>
+                                <br>
+                                양 어깨의 노드간 거리를 기준으로 삼아 손의 노드는 어디까지 올라가야 하는가,<br>
+                                팔의 각도는 충분한가 등을 계산하여 올바른 자세를 판단할 수 있도록 만들었습니다.
+                                
+                            </p>
+
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Full Features</h3>
+                            <div class="subheading mb-3">프로젝트의 전체 기능들</div>
+                            <p>
+                                - 로그인<br>
+                                - 모션인식을 통한 운동 메뉴 선택<br>
+                                - 모션인식 보조 운동<br>
+                                - RESTful API를 통한 어플 - 웹서버간 통신<br>
+                                - Ajax를 통한 화면 업데이트<br>
+                                - 운동 데이터를 통한 사용자 통계 제공<br>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Learned Lessons</h3>
+                            <div class="subheading mb-3">프로젝트를 진행하며</div>
+                            <p>
+                                해당 프로젝트를 진행하면 가장 인상깊었던 부분은 API를 사용하여 다른 언어로 제작된 어플리케이션간의 통신을 구현했던 부분입니다.<br>
+                                이 경험을 통해 API에 대한 개념을 보다 실감나게 알 수 있었습니다.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <a class="social-icon" href="https://github.com/OQOOO/HealthCareSystem"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+            </section>
+            <hr class="m-0" />
+
 
             
             <!-- project3 -->
+            <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+            
             <section class="resume-section" id="project3">
                 <div class="resume-section-content">
                     <h2 class="mb-1">project 3</h2>
@@ -541,7 +566,7 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <!-- <h3 class="mb-0">Full Features</h3>
+                            <h3 class="mb-0">Full Features</h3>
                             <div class="subheading mb-3">프로젝트의 기능들</div>
                             <p>
                                 - 로그인, 회원가입, 개인정보 수정, 회원 탈퇴(대여중인 도서 없을경우 가능)<br>
@@ -551,8 +576,13 @@
                                 - 게시판 관리 (관리자)<br>
                                 - 유저 계정 및 대여한 도서목록 관리 (관리자)<br>
                                 - 특정 계정 관리자 계정으로 승격 (관리자)
-                            </p> -->
-                            <h3 class="mb-0">Throughout the Project</h3>
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Learned Lessons</h3>
                             <div class="subheading mb-3">프로젝트를 진행하며</div>
                             <p>
                                 해당 프로젝트를 진행하며 MVC 패턴과 웹 애플리케이션의 구조에 대한 지식을 처음으로 접할 수 있었습니다.
@@ -569,6 +599,7 @@
             
             
             <!-- Mini projects -->
+            <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
             <section class="resume-section" id="miniProjects">
                 <div class="resume-section-content">
                     <h2 class="mb-1">Mini projects</h2>
@@ -595,7 +626,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2022.08</span></div>
                     </div>
-                    <!-- 
+                    
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">song crawler</h3>
@@ -608,7 +639,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">2022.10</span></div>
                     </div>
-                     -->
+                    
                 </div>
             </section>
             <hr class="m-0" />
